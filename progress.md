@@ -13,3 +13,10 @@
 **Commit**: Add API key pattern validation for multiple LLM providers
 **Acceptance**: 12/12 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
+
+## Round 3
+**Task**: Task 3 — Text masking utilities
+**Files created**: academic_toolbox/text_mask.py, tests/test_text_mask.py
+**Commit**: Add text masking utilities for bilingual content handling
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state

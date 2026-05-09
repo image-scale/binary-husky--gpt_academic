@@ -35,11 +35,22 @@
 ## Task 3: Text Masking Utilities
 
 ### Acceptance Criteria
-- [ ] build_masked_string creates a string with both English and Chinese versions
-- [ ] apply_mask("show_english") extracts the English version from masked string
-- [ ] apply_mask("show_chinese") extracts the Chinese version from masked string
-- [ ] Language detection identifies English text correctly
-- [ ] Language detection identifies Chinese text correctly
-- [ ] apply_mask_langbased auto-selects based on detected language of reference text
-- [ ] Non-masked strings pass through unchanged
-- [ ] Empty or None inputs are handled gracefully
+- [x] build_masked_string creates a string with both English and Chinese versions
+- [x] apply_mask("show_english") extracts the English version from masked string
+- [x] apply_mask("show_chinese") extracts the Chinese version from masked string
+- [x] Language detection identifies English text correctly
+- [x] Language detection identifies Chinese text correctly
+- [x] apply_mask_langbased auto-selects based on detected language of reference text
+- [x] Non-masked strings pass through unchanged
+- [x] Empty or None inputs are handled gracefully
+
+## Task 4: Colorful Logging Utilities
+
+### Acceptance Criteria
+- [ ] log_red("message") prints message in red color
+- [ ] log_green("message") prints message in green color
+- [ ] log_blue("message") prints message in blue color
+- [ ] log_yellow("message") prints message in yellow color
+- [ ] Multiple arguments are joined with space separator
+- [ ] Non-string arguments are converted to strings
+- [ ] Print function fallback works when colorama is not available
