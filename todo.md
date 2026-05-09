@@ -5,8 +5,8 @@ Build foundation modules first (configuration and utilities), then implement cor
 
 ## Tasks
 - [x] Task 1: Implement configuration management system that loads settings from environment variables, private config, and default config files with proper priority (env > private > default) and type conversion (config_loader.py + tests)
-- [>] Task 2: Implement API key pattern validation for different providers (OpenAI, Azure, API2D, Cohere) with regex matching, key selection based on model type, and multi-key load balancing (key_pattern_manager.py + tests)
-- [ ] Task 3: Implement text masking utilities for language-based string transformation that allows conditional text rendering based on detected language (text_mask.py + tests)
+- [x] Task 2: Implement API key pattern validation for different providers (OpenAI, Azure, API2D, Cohere) with regex matching, key selection based on model type, and multi-key load balancing (key_pattern_manager.py + tests)
+- [>] Task 3: Implement text masking utilities for language-based string transformation that allows conditional text rendering based on detected language (text_mask.py + tests)
 - [ ] Task 4: Implement colorful logging utilities with styled console output for different log levels (colorful.py + tests)
 - [ ] Task 5: Implement markdown-to-HTML conversion with code highlighting, LaTeX math formula support via tex2mathml, equation detection, and indent fixing (markdown_format.py + tests)
 - [ ] Task 6: Implement core text processing functions that generate prompts for academic polishing, grammar checking, translation, code explanation, and mind map generation (core_functional.py + tests)

@@ -19,15 +19,27 @@
 ## Task 2: API Key Pattern Validation
 
 ### Acceptance Criteria
-- [ ] is_openai_api_key("sk-" + 48 chars) returns True for valid OpenAI key
-- [ ] is_openai_api_key("sk-proj-" + 124/156 chars) returns True for project keys
-- [ ] is_openai_api_key("sess-" + 40 chars) returns True for session keys
-- [ ] is_openai_api_key("invalid") returns False for invalid key
-- [ ] is_azure_api_key with 32 alphanumeric chars returns True
-- [ ] is_api2d_key("fk" + 6 chars + "-" + 32 chars) returns True
-- [ ] is_any_api_key returns True for any valid key type
-- [ ] is_any_api_key returns True for comma-separated multiple keys
-- [ ] select_api_key selects appropriate key type for "gpt-3.5-turbo" model (OpenAI)
-- [ ] select_api_key selects appropriate key type for "azure-gpt-4" model (Azure)
-- [ ] select_api_key raises RuntimeError when no matching key is found
-- [ ] what_keys returns a summary string counting keys by type
+- [x] is_openai_api_key("sk-" + 48 chars) returns True for valid OpenAI key
+- [x] is_openai_api_key("sk-proj-" + 124/156 chars) returns True for project keys
+- [x] is_openai_api_key("sess-" + 40 chars) returns True for session keys
+- [x] is_openai_api_key("invalid") returns False for invalid key
+- [x] is_azure_api_key with 32 alphanumeric chars returns True
+- [x] is_api2d_key("fk" + 6 chars + "-" + 32 chars) returns True
+- [x] is_any_api_key returns True for any valid key type
+- [x] is_any_api_key returns True for comma-separated multiple keys
+- [x] select_api_key selects appropriate key type for "gpt-3.5-turbo" model (OpenAI)
+- [x] select_api_key selects appropriate key type for "azure-gpt-4" model (Azure)
+- [x] select_api_key raises RuntimeError when no matching key is found
+- [x] what_keys returns a summary string counting keys by type
+
+## Task 3: Text Masking Utilities
+
+### Acceptance Criteria
+- [ ] build_masked_string creates a string with both English and Chinese versions
+- [ ] apply_mask("show_english") extracts the English version from masked string
+- [ ] apply_mask("show_chinese") extracts the Chinese version from masked string
+- [ ] Language detection identifies English text correctly
+- [ ] Language detection identifies Chinese text correctly
+- [ ] apply_mask_langbased auto-selects based on detected language of reference text
+- [ ] Non-masked strings pass through unchanged
+- [ ] Empty or None inputs are handled gracefully
