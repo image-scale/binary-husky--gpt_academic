@@ -47,10 +47,22 @@
 ## Task 4: Colorful Logging Utilities
 
 ### Acceptance Criteria
-- [ ] log_red("message") prints message in red color
-- [ ] log_green("message") prints message in green color
-- [ ] log_blue("message") prints message in blue color
-- [ ] log_yellow("message") prints message in yellow color
-- [ ] Multiple arguments are joined with space separator
-- [ ] Non-string arguments are converted to strings
-- [ ] Print function fallback works when colorama is not available
+- [x] log_red("message") prints message in red color
+- [x] log_green("message") prints message in green color
+- [x] log_blue("message") prints message in blue color
+- [x] log_yellow("message") prints message in yellow color
+- [x] Multiple arguments are joined with space separator
+- [x] Non-string arguments are converted to strings
+- [x] Print function fallback works when colorama is not available
+
+## Task 5: Markdown-to-HTML Conversion
+
+### Acceptance Criteria
+- [ ] markdown_to_html converts basic markdown (headers, lists, bold, italic) to HTML
+- [ ] Code blocks are converted with proper syntax highlighting
+- [ ] LaTeX equations in $...$ format are detected and converted to MathML
+- [ ] Display equations in $$...$$ format are also supported
+- [ ] Fix indent for markdown lists to ensure proper nesting
+- [ ] Close unclosed code blocks during streaming (incomplete output)
+- [ ] is_equation detects presence of math formulas in text
+- [ ] Already-converted HTML passes through unchanged
