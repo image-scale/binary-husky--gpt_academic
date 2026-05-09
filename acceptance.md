@@ -122,3 +122,17 @@
 - [x] load_plugins_from_dict loads plugins from legacy dictionary format
 - [x] match_group checks if plugin belongs to selected groups
 - [x] PluginManager handles module loading and reloading
+
+## Task 10: Main Integration Module
+
+### Acceptance Criteria
+- [x] AcademicConfig loads settings from configuration files
+- [x] AcademicToolbox provides unified access to all modules
+- [x] create_toolbox creates configured toolbox instance
+- [x] get_system_info returns system status dictionary
+- [x] chat method sends messages and returns responses (via LLMBridge)
+- [x] apply_core_function applies academic processing functions
+- [x] format_markdown converts markdown to HTML
+- [x] write_history saves conversation to file
+- [x] Convenience functions (polish_text, check_grammar, translate_text, explain_code)
+- [x] Plugin registration and dispatch through toolbox interface
