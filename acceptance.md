@@ -80,3 +80,17 @@
 - [x] handle_core_functionality applies prefix and suffix to user inputs
 - [x] PreProcess function is called when defined in function config
 - [x] AutoClearHistory option clears history when True
+
+## Task 7: Main Toolbox Utilities
+
+### Acceptance Criteria
+- [x] write_history_to_file writes chat history to markdown file with proper formatting
+- [x] gen_time_str generates timestamp string in YYYY-MM-DD-HH-MM-SS format
+- [x] find_free_port returns an available port number
+- [x] find_recent_files finds files created within a specified time window
+- [x] zip_folder compresses directory contents to a zip file
+- [x] ProxyNetworkActivate context manager sets/clears proxy environment variables
+- [x] DummyWith context manager does nothing (passthrough)
+- [x] trimmed_format_exc returns traceback with paths sanitized
+- [x] regular_txt_to_markdown converts plain text to markdown format
+- [x] get_log_folder returns path to logging directory, creating it if needed
