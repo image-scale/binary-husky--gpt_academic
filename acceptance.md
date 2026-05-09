@@ -58,11 +58,25 @@
 ## Task 5: Markdown-to-HTML Conversion
 
 ### Acceptance Criteria
-- [ ] markdown_to_html converts basic markdown (headers, lists, bold, italic) to HTML
-- [ ] Code blocks are converted with proper syntax highlighting
-- [ ] LaTeX equations in $...$ format are detected and converted to MathML
-- [ ] Display equations in $$...$$ format are also supported
-- [ ] Fix indent for markdown lists to ensure proper nesting
-- [ ] Close unclosed code blocks during streaming (incomplete output)
-- [ ] is_equation detects presence of math formulas in text
-- [ ] Already-converted HTML passes through unchanged
+- [x] markdown_to_html converts basic markdown (headers, lists, bold, italic) to HTML
+- [x] Code blocks are converted with proper syntax highlighting
+- [x] LaTeX equations in $...$ format are detected and converted to MathML
+- [x] Display equations in $$...$$ format are also supported
+- [x] Fix indent for markdown lists to ensure proper nesting
+- [x] Close unclosed code blocks during streaming (incomplete output)
+- [x] is_equation detects presence of math formulas in text
+- [x] Already-converted HTML passes through unchanged
+
+## Task 6: Core Text Processing Functions
+
+### Acceptance Criteria
+- [x] get_core_functions() returns a dictionary of function definitions
+- [x] Each function definition has at least "Prefix" and "Suffix" keys
+- [x] Academic polishing function uses bilingual masked strings (English/Chinese variants)
+- [x] Grammar checking function includes example format showing corrections table
+- [x] Translation functions exist for Chinese-to-English and English-to-Chinese
+- [x] Code explanation function wraps input in code block delimiters
+- [x] Mind map function generates mermaid flowchart prompt
+- [x] handle_core_functionality applies prefix and suffix to user inputs
+- [x] PreProcess function is called when defined in function config
+- [x] AutoClearHistory option clears history when True
