@@ -108,3 +108,17 @@
 - [x] verify_endpoint validates endpoint URLs
 - [x] parse_stream_response extracts content from streamed chunks
 - [x] LLMBridge class provides predict interface for API calls
+
+## Task 9: Plugin System with Hot Reload
+
+### Acceptance Criteria
+- [x] register_plugin registers a function with metadata (group, color, info)
+- [x] get_plugin retrieves a registered plugin by name
+- [x] get_all_plugins returns all registered plugins
+- [x] get_plugins_by_group filters plugins by group membership
+- [x] dispatch_plugin calls the registered function with arguments
+- [x] hot_reload decorator enables function reloading without restart
+- [x] plugin decorator provides convenient registration syntax
+- [x] load_plugins_from_dict loads plugins from legacy dictionary format
+- [x] match_group checks if plugin belongs to selected groups
+- [x] PluginManager handles module loading and reloading
