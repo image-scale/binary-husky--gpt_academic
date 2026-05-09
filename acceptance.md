@@ -94,3 +94,17 @@
 - [x] trimmed_format_exc returns traceback with paths sanitized
 - [x] regular_txt_to_markdown converts plain text to markdown format
 - [x] get_log_folder returns path to logging directory, creating it if needed
+
+## Task 8: Basic LLM Bridge Interface
+
+### Acceptance Criteria
+- [x] Model registry stores model configurations with max_token, endpoint, and tokenizer type
+- [x] get_model_info returns model information for registered models
+- [x] get_available_models lists all registered model names
+- [x] Token counting works for text and message lists
+- [x] build_messages constructs message list from user input, history, and system prompt
+- [x] build_payload creates API request payload with model-specific handling
+- [x] build_headers generates proper headers for OpenAI and Azure APIs
+- [x] verify_endpoint validates endpoint URLs
+- [x] parse_stream_response extracts content from streamed chunks
+- [x] LLMBridge class provides predict interface for API calls

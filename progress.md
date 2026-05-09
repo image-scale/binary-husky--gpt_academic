@@ -48,3 +48,10 @@
 **Commit**: Add main toolbox utilities for file operations and proxy management
 **Acceptance**: 10/10 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
+
+## Round 8
+**Task**: Task 8 — Basic LLM bridge interface
+**Files created**: academic_toolbox/llm_bridge.py, tests/test_llm_bridge.py
+**Commit**: Add LLM bridge interface with model registry and token counting
+**Acceptance**: 10/10 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
